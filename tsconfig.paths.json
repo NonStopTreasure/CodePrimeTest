@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@common/*": ["src/common/*"],
+      "@api/*": ["src/common/api/*"],
+      "@enums/*": ["src/common/enums/*"],
+      "@interfaces/*": ["src/common/interfaces/*"],
+      "@styles/*": ["src/common/styles/*"],
+      "@utils/*": ["src/common/utils/*"],
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@routes/*": ["src/routes/*"],
+      "@statics/*": ["src/statics/*"],
+      "@store/*": ["src/store/*"],
+    }
+  }
+}
