@@ -2,6 +2,7 @@ export interface IChuckNorrisProps {
   key?: string
 }
 
+
 export interface IChuckNorrisRandom {
   categories: string[]
   created_at: string
@@ -11,3 +12,4 @@ export interface IChuckNorrisRandom {
   url: string
   value: string
 }
+

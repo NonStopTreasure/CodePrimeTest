@@ -1,3 +1,4 @@
+
 import React, { FC, useEffect, useState } from "react"
 import { Col, Row, Spin } from "antd"
 import Logo from "src/static/logo.svg"
@@ -52,6 +53,16 @@ const ChuckNorris: FC<IChuckNorrisProps> = (): React.ReactElement => {
   }
 
 
+
+import React, { FC } from "react"
+import { Col, Row } from "antd"
+import Logo from "src/static/logo.svg"
+import { IChuckNorrisProps } from "@interfaces/index"
+
+import "./style.scss"
+
+const ChuckNorris: FC<IChuckNorrisProps> = ({}: IChuckNorrisProps): React.ReactElement => {
+
   return (
     <div className="chuck-norris">
       <div className="header">
@@ -60,6 +71,7 @@ const ChuckNorris: FC<IChuckNorrisProps> = (): React.ReactElement => {
           <p className="logo__p">Chuck Norris</p>
         </Row>
       </div>
+
       <Col className="content">
         {isLoading ?
           <Spin
@@ -105,6 +117,24 @@ const ChuckNorris: FC<IChuckNorrisProps> = (): React.ReactElement => {
           </>
         }
       </Col>
+
+
+      <div className="content">
+        <Col>
+          <Row>
+            <p>Categories</p>
+          </Row>
+          <Row>
+            <div />
+          </Row>
+          <Col>
+            <p>1</p>
+            <Col>
+              <p>2</p>
+            </Col>
+          </Col>
+        </Col>
+      </div>
 
     </div>
   )
